@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Internet Of Things</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+
+
+	<body>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo">
+							<span class="material-icons">computer </span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Internet Of Things</h1>
+								<p1> <em> Welcome to the Page of Testing Internet of Things Using Raspberry Pi board</em></p>
+<form name="ipwala" method="GET">
+IP Address is:
+<input type = "text" name = "jeofjckh" value = "" style = "text-align:center;">
+</form>
+<script type="text/javascript">
+	<!--
+	var ip=prompt("IP ADDRESS :","");
+	document.ipwala.elements[0].setAttribute('value',ip);
+
+	//-->
+	</script>
+					<p2> <strong> </p2>
+						</div>
+					</div>
+<style>
+div.gallery {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 80px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery1:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+div.gallery1
+{
+margin:3px; 
+margin-left: 109px; 
+border: 1px solid #ccc; 
+float: left; 
+width: 80px;
+}
+div.gallery1 img {
+    width: 100%;
+    height: 100;
+}
+</style>
+<?php
+  $v=array(0,0,0,0);
+  for($i=0;$i<4;$i++)
+  {
+   system("gpio mode ".$i." out");
+   $v[$i]=exec ("gpio read ".$i );
+  }
+  for ($j = 0; $j < 4; $j++) {
+	
+		if ($v[$j] == 0 ) {
+                      if($j==0)
+                      {
+			echo("<img id='button_".$i."' '<div class="gallery1">
+                        <img src="pTq5RbBT9.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 7</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                       }
+                      else if($j==1){
+                        echo("<img id='button_".$i."' '<div class="gallery">
+                        <img src="pTq5RbBT9.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 11</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                     else if($j==2){
+                          echo("<img id='button_".$i."' '<div class="gallery">
+                        <img src="pTq5RbBT9.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 12</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                     else{
+                        echo("<img id='button_".$i."' '<div class="gallery">
+                        <img src="pTq5RbBT9.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 13</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                    } 
+                        
+		}
+		
+		if ($v[$j] == 1 ) {
+                      if($j==0)
+                       {
+			echo("<img id='button_".$i."' '<div class="gallery1">
+                        <img src="green1.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 7</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                       }
+                      else if($j==1){
+                        echo("<img id='button_".$i."' '<div class="gallery">
+                        <img src="green1.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 11</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                        }
+                     else if($j==2){
+                       echo("<img id='button_".$i."' '<div class="gallery">
+                        <img src="green1.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 12</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                       }
+                     else{
+                        echo("<img id='button_".$i."' '<div class="gallery">
+                        <img src="green1.png" 
+                        width="80px" height="80" />
+                        <div class="desc">PIN 13</div>
+                        </div>' onclick='change_pin(".$i.");'/>");
+                      
+                      }
+                }
+   }
+?>
+
+<br>
+<br><br><br>
+	<footer id="footer">
+	<p class="major"> Made at TechieNest by Mohit Khotani,Saksham Gupta,Sudhanshu Singh Rathore .</p>
+			</footer>
+
+		</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="script.js"></script>
+
+
+	</body>
+</html>
